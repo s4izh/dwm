@@ -14,18 +14,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 
-static const char normbgcolor[]     = "#222222";
-static const char normbordercolor[] = "#444444";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selfgcolor[]      = "#eeeeee";
-static const char selbgcolor[]      = "#005577";
-static const char selbordercolor[]  = "#550000";
-static char *colors[][3] = {
-    /* 	             fg           bg           border           */
-    [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
-    [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
-};
-
+#include "theme.h"
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
