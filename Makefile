@@ -6,7 +6,7 @@ include config.mk
 SRC = drw.c dwm.c util.c
 OBJ = ${SRC:.c=.o}
 
-all: options dwm
+all: options dwm etags
 
 options:
 	@echo dwm build options:
@@ -47,5 +47,8 @@ install: all
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
 		${DESTDIR}${MANPREFIX}/man1/dwm.1
+
+etags:
+	etags *.c *.h --output etags
 
 .PHONY: all options clean dist install uninstall
