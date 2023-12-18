@@ -10,6 +10,6 @@ static char selbgcolor[]            = "#1d1f21";
 
 static char *colors[][3] = {
                      /* fg           bg           border */
-       [SchemeNorm] = { normfgcolor, normbgcolor, normbordergcolor },
+       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
